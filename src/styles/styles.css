@@ -9,4 +9,48 @@ body {
   height: 100vh;
   display: grid;
   place-items: center;
+  background: rgb(41, 41, 40);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.reg-form {
+  border: 5px solid hsl(4, 19%, 84%);
+  padding: 30px 40px;
+  border-radius: 20px;
+  background: hsl(0, 21%, 92%);
+  color: rgb(41, 41, 40);
+  font-size: 16px;
+  box-shadow: 5px 10px 30px -5px #181818;
+}
+.reg-form .input-container {
+  margin-bottom: 30px;
+  position: relative;
+}
+.reg-form .input-container label {
+  position: absolute;
+  top: -10px;
+  left: 16px;
+  background: hsl(0, 21%, 92%);
+  padding: 0 8px;
+}
+.reg-form .input-container input {
+  background: none;
+  border: 1px solid hsl(195, 67%, 30%);
+  padding: 8px 20px;
+  width: 100%;
+  border-radius: 15px;
+  z-index: 1;
+}
+.reg-form .input-container .show-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  z-index: 0;
+  cursor: pointer;
+}
+.reg-form .input-container .show-password i {
+  font-size: 16px;
 }/*# sourceMappingURL=styles.css.map */

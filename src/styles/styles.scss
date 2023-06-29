@@ -58,3 +58,31 @@ body {
     }
   }
 }
+
+.btn-submit {
+  height: 33px;
+  width: 100%;
+  border-radius: 15px;
+  background: none;
+  transition: 0.2s ease;
+  border: 1px solid $paynes-gray;
+  position: relative;
+  &:hover {
+    padding-right: 30%;
+    background: $paynes-gray;
+    color: #fff;
+  }
+  i {
+    position: absolute;
+    font-size: 16px;
+    left: 50%;
+    opacity: 0;
+  }
+
+  &:hover i {
+    opacity: 1;
+    left: 65%;
+    color: #fff;
+    transition: 0.5s ease opacity, 0.2s left ease;
+  }
+}

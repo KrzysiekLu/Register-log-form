@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles/styles.css" />
     <script type="module" src="src/script/main.js"></script>
+    <link rel="shortcut icon" href="src/img/favicon.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -18,26 +19,37 @@
         <button class="top-btn" id="btnSignin">Sign in</button>
         <button class="top-btn" id="btnLogin">Login</button>
       </div>
-      <form class="" action="">
+      <form class="" method="POST" action="index.php">
         <div class="input-container">
           <label for="name">Name</label>
-          <input type="text" autocomplete="name" id="name" />
+          <input type="text" autocomplete="name" name="name" id="name" />
         </div>
         <div class="input-container">
           <label for="last-name">Last name</label>
-          <input type="text" autocomplete="family-name" id="last-name" />
+          <input
+            type="text"
+            name="lastName"
+            id="last-name"
+            autocomplete="family-name"
+          />
         </div>
         <div class="input-container">
           <label for="b-date">Birth date</label>
-          <input type="date" id="b-date" />
+          <input
+            name="b-date"
+            type="date"
+            id="b-date"
+            autocomplete="bday-year"
+          />
         </div>
         <div class="input-container">
           <label for="email">E-mail</label>
-          <input type="email" autocomplete="email" id="email" />
+          <input name="email" type="email" autocomplete="email" id="email" />
         </div>
         <div class="input-container password-container">
           <label for="password">Password</label>
           <input
+            name="password"
             type="password"
             autocomplete="current-password"
             id="password"
@@ -46,7 +58,7 @@
             <i class="material-symbols-outlined"> visibility </i>
           </button>
         </div>
-        <button class="signIn btn-submit">
+        <button type="submit" name="submit" class="signIn btn-submit">
           <span>Sign in</span> <i class="material-symbols-outlined"> send </i>
         </button>
       </form>

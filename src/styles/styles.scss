@@ -25,6 +25,22 @@ body {
   color: $black-olive;
   font-size: 16px;
   box-shadow: 5px 10px 30px -5px #181818;
+  .top-btns-container {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .top-btn {
+      border: none;
+      background: none;
+      border-bottom: 2px solid #000;
+      padding-bottom: 2px;
+      transition: 0.3s ease;
+      &:hover {
+        padding: 0 3px 2px;
+      }
+    }
+  }
   .input-container {
     margin-bottom: 30px;
     position: relative;

@@ -14,25 +14,33 @@
   </head>
   <body>
     <div class="reg-form">
-      <form action="">
+      <div class="top-btns-container">
+        <button class="top-btn" id="btnSignin">Sign in</button>
+        <button class="top-btn" id="btnLogin">Login</button>
+      </div>
+      <form class="" action="">
         <div class="input-container">
           <label for="name">Name</label>
-          <input type="text" autocomplete="username" name="name" />
+          <input type="text" autocomplete="name" id="name" />
         </div>
         <div class="input-container">
           <label for="last-name">Last name</label>
-          <input type="text" autocomplete="family-name" name="last-name" />
+          <input type="text" autocomplete="family-name" id="last-name" />
         </div>
         <div class="input-container">
           <label for="b-date">Birth date</label>
-          <input type="date" name="b-date" />
+          <input type="date" id="b-date" />
+        </div>
+        <div class="input-container">
+          <label for="email">E-mail</label>
+          <input type="email" autocomplete="email" id="email" />
         </div>
         <div class="input-container password-container">
           <label for="password">Password</label>
           <input
             type="password"
             autocomplete="current-password"
-            name="password"
+            id="password"
           />
           <button class="show-password">
             <i class="material-symbols-outlined"> visibility </i>
